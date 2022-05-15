@@ -1,45 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&family=Rouge+Script&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
 
 body {
-    background-image: url("img/pink-2160666_1920.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-.text {
-font-family: 'Updock';
-font-size: 200px;
-font-weight: 300;
-text-align: center;
-margin-top: 0px;
+  background-color: #f7e4e6;
+  color: #595959;
+  font-family: "El Messiri", sans-serif;
 }
-.date {
-    font-family: Updock;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 1%;
+.newlyweds {
+  font-family: "Rouge Script", cursive;
+  font-size: 10rem;
+  color: #623c27;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0px;
+}
+.wedding-date {
+  font-family: Updock;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 1%;
 }
 nav {
-top: 0px;
-left: 0px;
-position: absolute;
-}
-.logo-delimiter {
-  font-size: 500px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
 }
 
-ul.hr {
-    margin: 0; /* Обнуляем значение отступов */
-    padding: 4px; /* Значение полей */
-    text-align: center;
-   }
-   ul.hr li {
-    display: inline; /* Отображать как строчный элемент */
-    margin-right: 5px; /* Отступ слева */
-    border: 1px solid #000; /* Рамка вокруг текста */
-    padding: 3px; /* Поля вокруг текста */
-   }
+.page {
+  height: 100vh;
+  border-top: 4px solid #287e68 ;
+}
