@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+body {
+    background-image: url("img/pink-2160666_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+.text {
+font-family: 'Updock';
+font-size: 200px;
+font-weight: 300;
+text-align: center;
+margin-top: 0px;
+}
+.date {
+    font-family: Updock;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 1%;
+}
+nav {
+top: 0px;
+left: 0px;
+position: absolute;
+}
+.logo-delimiter {
+  font-size: 500px;
+}
+
+ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+    text-align: center;
+   }
+   ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+   }
