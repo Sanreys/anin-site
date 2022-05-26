@@ -11,15 +11,14 @@ html {
 }
 
 body {
-  color: #463F3A;
+  color: #463f3a;
   font-family: "El Messiri", sans-serif;
   padding: 5rem;
   background-color: #f4f3ee;
 }
 main {
-   /* background-color: #f7e4e6; */
-   background-color: #FAF2F0;
-
+  /* background-color: #f7e4e6; */
+  background-color: #faf2f0;
 }
 .newlyweds {
   font-family: "Rouge Script", cursive;
@@ -35,17 +34,16 @@ main {
   margin-top: 1%;
 }
 nav {
- font-size: 2rem;
- margin-bottom: 1rem;
- padding: 1rem;
- background-color: #f4f3ee;
- position: sticky;
- top: 0;
- text-align: center;
-
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f4f3ee;
+  position: sticky;
+  top: 0;
+  text-align: center;
 }
-nav a { 
-  color: #463F3A;
+nav a {
+  color: #463f3a;
   text-decoration: none;
   margin: 0 1rem;
 }
@@ -53,12 +51,27 @@ header {
   text-align: center;
 }
 .page {
-  height: 100vh;
-  border-top: 4px solid #287e68 ;
+  padding-top: 2rem;
 }
 #countdown {
   font-size: 6rem;
 }
 .header-photo {
   max-width: 100%;
+}
+.welcome-photo img {
+  max-width: 100%;
+}
+#welcome {
+  display: flex;
+}
+.welcome-photo {
+  flex: 50%;
+}
+.welcome-text {
+  flex: 50%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
