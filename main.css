@@ -11,31 +11,54 @@ html {
 }
 
 body {
-  background-color: #f7e4e6;
-  color: #595959;
+  color: #463F3A;
   font-family: "El Messiri", sans-serif;
+  padding: 5rem;
+  background-color: #f4f3ee;
+}
+main {
+   /* background-color: #f7e4e6; */
+   background-color: #FAF2F0;
+
 }
 .newlyweds {
   font-family: "Rouge Script", cursive;
-  font-size: 10rem;
+  font-size: 18rem;
   color: #623c27;
   font-weight: 400;
   text-align: center;
   margin-top: 0px;
 }
 .wedding-date {
-  font-family: Updock;
   font-size: 70px;
   text-align: center;
   margin-top: 1%;
 }
 nav {
-  top: 0px;
-  left: 0px;
-  position: absolute;
-}
+ font-size: 2rem;
+ margin-bottom: 1rem;
+ padding: 1rem;
+ background-color: #f4f3ee;
+ position: sticky;
+ top: 0;
+ text-align: center;
 
+}
+nav a { 
+  color: #463F3A;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+header {
+  text-align: center;
+}
 .page {
   height: 100vh;
   border-top: 4px solid #287e68 ;
+}
+#countdown {
+  font-size: 6rem;
+}
+.header-photo {
+  max-width: 100%;
 }
