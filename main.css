@@ -18,7 +18,7 @@ body {
 }
 main {
   /* background-color: #f7e4e6; */
-  background-color: #faf2f0;
+  background-color: #e0afa0;
 }
 .newlyweds {
   font-family: "Rouge Script", cursive;
@@ -46,6 +46,7 @@ nav a {
   color: #463f3a;
   text-decoration: none;
   margin: 0 1rem;
+  text-transform: capitalize;
 }
 header {
   text-align: center;
@@ -59,13 +60,16 @@ header {
 .header-photo {
   max-width: 100%;
 }
-.welcome-photo img {
+.welcome-photo img,
+.place-date-photo img {
   max-width: 100%;
 }
-#welcome {
+#welcome,
+#place-date {
   display: flex;
 }
-.welcome-photo {
+.welcome-photo,
+.place-date-photo {
   flex: 50%;
 }
 .welcome-text {
@@ -74,4 +78,60 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 5rem;
+}
+.place-date-text {
+  flex: 50%;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+}
+.date-info__section {
+  padding-bottom: 8rem;
+}
+.section-heading {
+  font-size: 6rem;
+  text-transform: capitalize;
+}
+#wedding-day {
+  text-align: center;
+}
+.events {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem 0;
+
+}
+.event {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+
+}
+.event-photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.event-photo img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.event h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+.event p {
+  font-size: 2rem;
+
+  
 }
