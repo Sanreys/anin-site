@@ -41,6 +41,8 @@ nav {
   position: sticky;
   top: 0;
   text-align: center;
+  z-index: 1;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 nav a {
   color: #463f3a;
@@ -53,6 +55,7 @@ header {
 }
 .page {
   padding-top: 2rem;
+  text-align: center;
 }
 #countdown {
   font-size: 6rem;
@@ -102,8 +105,8 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 5rem 0;
-
 }
+
 .event {
   width: 20%;
   display: flex;
@@ -111,7 +114,11 @@ header {
   align-items: center;
   justify-content: center;
   padding: 5rem;
+  transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+}
 
+.event:hover {
+  transform: scale(1.1);
 }
 .event-photo{
   width: 200px;
@@ -134,4 +141,63 @@ object-fit: cover;
   font-size: 2rem;
 
   
+}
+
+.inforamtion-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  gap: 4rem;
+  padding: 4rem;
+}
+
+.info-card {
+  background-color: #F4F3EE;
+  width: 30rem;
+  height: 50rem;
+  transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+  border-radius: 5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  justify-self: center;
+}
+
+.info-card:hover {
+  transform: scale(1.1);
+  
+
+}
+
+.info-card__header {
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 2rem 0;
+
+}
+
+.info-card__content {
+  font-size: 2rem;
+  text-align: left;
+  padding: 2rem;
+  font-weight: 400;
+}
+
+.info-card__content b {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.info-card__content p {
+  padding: 2rem 0;
+}
+
+.colors {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.color-box {
+  width: 5rem;
+  height: 3rem;
+  display: inline-block;
 }
