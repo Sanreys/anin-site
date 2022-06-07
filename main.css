@@ -115,6 +115,7 @@ header {
   justify-content: center;
   padding: 5rem;
   transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+  
 }
 
 .event:hover {
@@ -125,6 +126,7 @@ header {
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  box-shadow: 0 5px 4px 0 rgba(17, 1, 1, 0.747);
 }
 .event-photo img {
 width: 100%;
@@ -200,4 +202,7 @@ object-fit: cover;
   width: 5rem;
   height: 3rem;
   display: inline-block;
+}
+.footer-photo {
+  max-width: 100%;
 }

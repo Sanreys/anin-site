@@ -29,9 +29,28 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (days > 1) {
             daysLeft = days + ' days';
         }
+
+       let hoursLeft = '';
+       if (hours < 10) {
+           hoursLeft = '0' + hours;
+       }else if (hours >= 10) {
+           hoursLeft = hours;
+       }
+       let minsLeft = '';
+       if (minutes < 10) {
+           minsLeft = '0' + minutes;
+       }else if (minutes >= 10) {
+           minsLeft = minutes;
+       }
+       let secLeft = '';
+       if (seconds < 10) {
+           secLeft = '0' + seconds;
+       }else if (seconds >= 10) {
+           secLeft = seconds;
+       }
     
         const dateLeft = monthsLeft + ' ' + daysLeft;
-        const timeLeft = hours + ':' + minutes + ':' + seconds;    
+        const timeLeft = hoursLeft + ':' + minsLeft + ':' + secLeft;    
 
         dateContainer.innerHTML = dateLeft;
         timeContainer.innerHTML = timeLeft;
